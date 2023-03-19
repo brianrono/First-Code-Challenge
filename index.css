@@ -2,9 +2,9 @@
     background-color: #FFFD98;
 } */
 
-.grades {
+/* .grades {
     background-color: aqua;
-}
+} */
 
 body {
     font-family: Arial, sans-serif;
@@ -56,13 +56,18 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(34, 2, 2, 0.3);
 }
 
-.result {
-    font-size: 24px;
-    margin-top: 20px;
+#result {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 26px;
     text-align: center;
+	color: red;
 }
+
 
 .speed {
     background-color: #0A8754;
