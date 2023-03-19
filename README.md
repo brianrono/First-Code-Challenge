@@ -12,3 +12,6 @@ For example, if the speed is 80, it should print: “Points: 2”. If the driver
 
 ## Challenge 3: Net Salary Calculator
 This is the final program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. It calculates the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
+The figures used were obtained from the links below.
+    https://www.aren.co.ke/payroll/taxrates.htm 
+    https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
