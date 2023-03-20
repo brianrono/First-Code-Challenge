@@ -3,14 +3,10 @@
 function calculateGrade() {
     const score = parseInt(document.getElementById("score").value);
 
-    let grade;
-
-    if (score < 0 || score > 100){
-        console.log("Invalid Score, Try again!");
-    }
-   
+    let grade;// Declare a variable to hold the calculated grade.
     
-    else if (score > 79) {
+    // Use conditional statements to determine the grade based on the score.
+    if (score > 79 && score <= 100) {
         grade = "A";
     } 
 
@@ -26,10 +22,13 @@ function calculateGrade() {
         grade = "D";
     } 
 
-    else {
+    else if(score >= 0 && score < 40){
         grade = "E";
     }
-    
+    else // If the score is not within the valid range, output an error message.
+    console.log("Invalid Score, Try again!");
+
+    // Update the result element in the HTML with the calculated grade.
     document.getElementById("result").innerHTML = `Student grade is: ${grade}`;
 }
 
@@ -55,12 +54,13 @@ function checkSpeed() {
 
 
   
-function toAchieveNetSalary(personalRelief, netSalary, totalDeductions, contribitionBenefit, NHIFDeductions, NSSFDeductions, grossSalary, taxableIncome){
+function achieveNetSalary(){
+    // initialize paye variable     
     let paye;
 
     personalRelief = 2400;
 
-    grossSalary = ("Enter your salary amount: ")
+    grossSalary = ("Enter your salary: ")
 
     contributionBenefit = ("Your contribution Benefit: ")
 
@@ -73,6 +73,8 @@ function toAchieveNetSalary(personalRelief, netSalary, totalDeductions, contribi
     totalDeductions = (NHIFDeductions + NSSFDeductions + personalRelief + contribitionBenefit);
     taxableIncome = grossSalary - totalDeductions;
 
+
+    // log taxable income and total deductions to console
     console.log(`your taxableIncome is ksh: ${taxableIncome}`)
     console.log(`your totalDeductions is ksh: ${totalDeductions}`)
 
@@ -96,6 +98,4 @@ function toAchieveNetSalary(personalRelief, netSalary, totalDeductions, contribi
     netSalary = (parseInt (taxableIncome - paye));
     console.log(`your netSalary is ksh: ${netSalary}`)
     
-
 }
-toAchieveNetSalary();
